@@ -1,26 +1,14 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap ");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css";
 
-* {
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+@layer components {
+  .NavLinks {
+    @apply after:transition-all after:duration-300 after:ease-linear hover:after:opacity-[1] hover:after:scale-x-[1] after:scale-x-0 font-[Poppins] text-white after:opacity-0 origin-[left-center] cursor-pointer after:content-[""] after:left-0 after:right-0 relative after:absolute after:bottom-[-1.5px] after:h-[2px] after:rounded-[20px] after:bg-white;
   }
 }
